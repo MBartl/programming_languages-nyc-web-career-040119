@@ -8,8 +8,8 @@ def reformat_languages(languages)
     end
   end
   if new_hash[:javascript][:style] == [:functional]
-    new_hash[:javascript][:style].unshift[":oo, "]
-    return new_hash[:javascript][:style]
+    javascript_array_change = new_hash[:javascript][:style]
+    return javascript_array_change
   end
 end
 
