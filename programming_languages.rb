@@ -10,6 +10,7 @@ def reformat_languages(languages)
   if new_hash[:javascript][:style] == [:functional]
     javascript_array_change = new_hash[:javascript][:style]
     javascript_array_change.unshift(":oo, ")
+    return javascript_array_change
   end
 end
 
