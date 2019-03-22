@@ -7,7 +7,10 @@ def reformat_languages(languages)
       end
     end
   end
-  return new_hash
+  if new_hash[language].to_s == ':ruby'
+    return step
+  end
+
 end
 
 reformat_languages(languages)
