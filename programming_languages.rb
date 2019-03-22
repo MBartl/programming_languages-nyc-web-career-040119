@@ -10,8 +10,6 @@ def reformat_languages(languages)
   languages.each do |style, data1|
     data1.each do |language, data2|
       new_hash[language][:style] << languages[style].to_s
-        end
-      end
     end
   end
   return new_hash
