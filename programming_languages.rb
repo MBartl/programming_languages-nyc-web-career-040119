@@ -9,7 +9,7 @@ def reformat_languages(languages)
   end
   if new_hash[:javascript][:style] == [:functional]
     javascript_array_change = new_hash[:javascript][:style]
-    return javascript_array_change.inspect
+    return javascript_array_change.class
   end
 end
 
