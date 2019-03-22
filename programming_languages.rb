@@ -11,6 +11,7 @@ def reformat_languages(languages)
     languages.each do |style, data1|
       data1.each do |language, data2|
         if new_hash[language_new].to_s == languages[style][language].to_s
+          return check
           new_hash[language][:style] << languages[style].to_s
         end
       end
