@@ -11,8 +11,8 @@ def reformat_languages(languages)
     javascript_style_change = new_hash[:javascript][:style].to_s
     languages[:oo] do |style, data1|
       javascript_style_change.push(style)
+      return javascript_style_change
     end
-    return javascript_style_change
   end
 end
 
