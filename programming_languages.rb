@@ -8,7 +8,7 @@ def reformat_languages(languages)
     end
   end
   if new_hash[:]
-  return new_hash
+  return new_hash[:javascript][:style]
 end
 
 reformat_languages(languages)
