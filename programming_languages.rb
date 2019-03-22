@@ -7,11 +7,16 @@ def reformat_languages(languages)
       end
     end
   end
-  new_hash.each do |language, data3|
-    if new_hash[language].to_s == 'ruby' || 'ruby'
-      return new_hash[language]
+  languages.each do |style, data1|
+    data1.each do |language, data2|
+      new_hash.each do |language_new, data3|
+        if new_hash[language_new].to_s == languages[style][language].to_s
+          new_hash[language][:style] << languages[style]
+        end
+      end
     end
   end
+  return new_hash
 end
 
 reformat_languages(languages)
