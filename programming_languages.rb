@@ -7,9 +7,9 @@ def reformat_languages(languages)
       end
     end
   end
-  languages.each do |style, data1|
-    data1.each do |language, data2|
-      new_hash.each do |language_new, data3|
+  new_hash.each do |language_new, data3|
+    languages.each do |style, data1|
+      data1.each do |language, data2|
         if new_hash[language_new].to_s == languages[style][language].to_s
           new_hash[language][:style] << languages[style].to_s
         end
