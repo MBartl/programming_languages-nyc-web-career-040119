@@ -11,7 +11,7 @@ def reformat_languages(languages)
     data1.each do |language, data2|
       new_hash.each do |language_new, data3|
         if new_hash[language_new].to_s == languages[style][language].to_s
-          new_hash[language][:style] << languages[style]
+          new_hash[language][:style] << languages[style].to_s
         end
       end
     end
