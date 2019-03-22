@@ -7,13 +7,6 @@ def reformat_languages(languages)
       end
     end
   end
-  if new_hash[:javascript][:style].length == 1
-    javascript_style_change = new_hash[:javascript][:style].to_s
-    languages.each do |style, data1|
-      javascript_style_change.push(style)
-      return javascript_style_change
-    end
-  end
 end
 
 reformat_languages(languages)
